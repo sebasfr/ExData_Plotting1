@@ -10,7 +10,9 @@ dF <- dF[dF$Date == "2007-02-02" | dF$Date == "2007-02-01", ]
 
 ## Generating the plot
 
-hist(dF$Global_active_power, col = "red", breaks = seq(min(dF$Global_active_power), max(dF$Global_active_power), length.out = 16), main = "Global Active Power", xlab = "Global Active Power (killowatts)", cex.lab = 0.75, cex.axis = 0.75)
+hist(dF$Global_active_power, col = "red", breaks = seq(min(dF$Global_active_power), 
+max(dF$Global_active_power), length.out = 16), main = "Global Active Power", 
+xlab = "Global Active Power (killowatts)", cex.lab = 0.75, cex.axis = 0.75)
 
 ## Exporting the plot as required
 
